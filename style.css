@@ -1,1 +1,495 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E PALETA DE CORES
+   ========================================================================== */
+:root {
+    --verde-escuro: #1b4332;
+    --verde-principal: #2d6a4f;
+    --verde-claro: #52b788;
+    --verde-fundo: #f4f9f4;
+    --destaque-terra: #b76935;
+    --texto-escuro: #2d312e;
+    --branco: #ffffff;
+    --cinza-leve: #e2eee4;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--verde-fundo);
+    color: var(--texto-escuro);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   2. CABEÇALHO (HEADER) E NAVEGAÇÃO
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde-principal));
+    color: var(--branco);
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+nav {
+    background-color: var(--verde-escuro);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--verde-claro);
+}
+
+/* ==========================================================================
+   3. ESTRUTURA DE LAYOUT (CONTAINER)
+   ========================================================================== */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: var(--branco);
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    border-left: 5px solid var(--verde-principal);
+}
+
+section h2 {
+    color: var(--verde-escuro);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* ==========================================================================
+   4. SECÇÃO DE BENEFÍCIOS (LISTAS)
+   ========================================================================== */
+#beneficios ul {
+    list-style: none;
+}
+
+#beneficios li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Ícone de plantinha antes de cada benefício */
+#beneficios li::before {
+    content: "🌱";
+    position: absolute;
+    left: 0;/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E PALETA DE CORES
+   ========================================================================== */
+:root {
+    --verde-escuro: #1b4332;
+    --verde-principal: #2d6a4f;
+    --verde-claro: #52b788;
+    --verde-fundo: #f4f9f4;
+    --destaque-terra: #b76935;
+    --texto-escuro: #2d312e;
+    --branco: #ffffff;
+    --cinza-leve: #e2eee4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--verde-fundo);
+    color: var(--texto-escuro);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   2. CABEÇALHO (HEADER) E NAVEGAÇÃO
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde-principal));
+    color: var(--branco);
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+nav {
+    background-color: var(--verde-escuro);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--verde-claro);
+}
+
+/* ==========================================================================
+   3. ESTRUTURA DE LAYOUT (CONTAINER)
+   ========================================================================== */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: var(--branco);
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    border-left: 5px solid var(--verde-principal);
+}
+
+section h2 {
+    color: var(--verde-escuro);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* ==========================================================================
+   4. SECÇÃO DE BENEFÍCIOS (LISTAS)
+   ========================================================================== */
+#beneficios ul {
+    list-style: none;
+}
+
+#beneficios li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Ícone de plantinha antes de cada benefício */
+#beneficios li::before {
+    content: "🌱";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#beneficios strong {
+    color: var(--verde-principal);
+}
+
+/* ==========================================================================
+   5. SECÇÃO DE IMPACTO (CONTADORES ANIMADOS)
+   ========================================================================== */
+#impacto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: var(--cinza-leve) !important;
+    border-left: none !important;
+    border-top: 4px solid var(--verde-claro);
+    text-align: center;
+    gap: 20px;
+}
+
+#impacto div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.contador {
+    font-size: 2.5rem;
+    color: var(--destaque-terra);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#impacto p {
+    font-weight: 600;
+    color: var(--verde-escuro);
+}
+
+/* ==========================================================================
+   6. FORMULÁRIO DE CONTACTO
+   ========================================================================== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--verde-escuro);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--verde-principal);
+}
+
+button[type="submit"] {
+    background-color: var(--verde-principal);
+    color: var(--branco);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--verde-escuro);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================================================
+   7. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+    margin-top: 60px;
+    border-top: 3px solid var(--destaque-terra);
+}
+
+/* ==========================================================================
+   8. RESPONSIVIDADE (ADAPTAÇÃO PARA TELEMÓVEIS)
+   ========================================================================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    nav a {
+        margin: 0 10px;
+        font-size: 0.8rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
+}
+    top: 0;
+}
+
+#beneficios strong {
+    color: var(--verde-principal);
+}
+
+/* ==========================================================================
+   5. SECÇÃO DE IMPACTO (CONTADORES ANIMADOS)
+   ========================================================================== */
+#impacto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: var(--cinza-leve) !important;
+    border-left: none !important;
+    border-top: 4px solid var(--verde-claro);
+    text-align: center;
+    gap: 20px;
+}
+
+#impacto div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.contador {
+    font-size: 2.5rem;
+    color: var(--destaque-terra);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#impacto p {
+    font-weight: 600;
+    color: var(--verde-escuro);
+}
+
+/* ==========================================================================
+   6. FORMULÁRIO DE CONTACTO
+   ========================================================================== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--verde-escuro);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--verde-principal);
+}
+
+button[type="submit"] {
+    background-color: var(--verde-principal);
+    color: var(--branco);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--verde-escuro);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================================================
+   7. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+    margin-top: 60px;
+    border-top: 3px solid var(--destaque-terra);
+}
+
+/* ==========================================================================
+   8. RESPONSIVIDADE (ADAPTAÇÃO PARA TELEMÓVEIS)
+   ========================================================================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    nav a {
+        margin: 0 10px;
+        font-size: 0.8rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
+}
